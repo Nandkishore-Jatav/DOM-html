@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change elements Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis sapiente totam id ea numquam reprehenderit!</p>
+    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+    <h1>Lorem ipsum dolor sit.</h1>
+    <img id="img1" src="04_images.jpg" alt="Computer" width = " 50%" height="30%">
+    <img id="img2" src="02_images.jpg" alt="Information" width = " 50%" height="30%">
+    <h1 id="newDate"></h1>
+    <img src="" alt="" width=" 40%" height="60%">
+    <script>
+        const na = document.getElementById("img2");
+        na.src = "04_images.jpg";
+
+        document.getElementById("img1").src = "02_images.jpg";
+
+        document.getElementsByTagName("img")[2].src = "02_images.jpg";
+
+        document.getElementById("newDate").innerHTML = "New Date : " + Date();
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM FORM Document</title>
+</head>
+<body>
+    <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus, eos.</P>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    Number :<input type="text" id="number"> 
+    <h1 id="nand"></h1>
+    <button type="button" onclick="nandkishore()">Submit</button>
+        
+    <script>
+        function nandkishore(){
+            let na = document.getElementById("number").value;
+            var text;
+            if(na<=1||na>100){
+                text = "not valid";
+            }else{
+                text = "Okay";
+            }
+            document.getElementById("nand").innerHTML = text;
+        }        
+    </script>
+</body>
+</html>
